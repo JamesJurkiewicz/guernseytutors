@@ -1,0 +1,155 @@
+
+body {
+	font-size: 20px;
+	font-family:"calibri";
+	font-style:bold;
+	background-color:white; 
+	font-variant: small-caps;
+}
+
+.collapse.navbar-collapse{
+	text-align:right;
+	margin:0px 20px;
+	}
+	
+.navbar{
+	margin:20px 20px;
+	background-color:rgba(200,200,240,0.0);
+	border-style:none;
+	border-bottom-style:ridge;
+	border-bottom-width:5px;
+	}
+
+	.nav > li > a:active{
+	background-color:transparent;
+	}
+	
+	.nav-tabs{
+	border-width:4px;
+	}
+	
+	
+.dropdown-menu{
+	background-color: rgba(240,240,240,0.95);
+	box-shadow: 0px 0px 10px 10px rgba(240,240,240,0.95);
+	float: center;
+	border:transparent;
+	width:100%;
+	border-radius:1px;
+	}
+	
+.dropdown-menu > li :hover {
+	background: transparent; 
+	font-weight:bold;
+	}
+	
+.tutor_description{
+vertical-align:center;
+font-variant:normal;
+}
+
+.active-link{
+font-weight:bold;
+background-color:transparent;
+}
+
+.dropdown-menu.a:link {color:gray;text-decoration:none;font-variant: small-caps;} 
+.dropdown-menu.a:visited {color:gray;text-decoration:none;}  /* visited link */
+.dropdown-menu.a:hover {color:gray; text-decoration:none; font-weight:bold;}  /* mouse over link */
+.dropdown-menu.a:active {color:gray;text-decoration:none; font-weight:bold;}  /* selected link */
+	
+	a:link {color:gray;text-decoration:none;font-variant: small-caps;}      /* unvisited link */
+	a:visited {color:gray;text-decoration:none;}  /* visited link */
+	a:hover {color:gray; text-decoration:none; font-weight:bold;}  /* mouse over link */
+	a:active {color:gray;text-decoration:none; font-weight:bold;}  /* selected link */
+	
+.navbar-nav {
+	float: right;
+	}	
+
+.main_heading{
+	clear:both;
+	height:480px;
+	font-weight:bold;
+	font-size:60px;
+	position: relative;
+	top:100px;
+	padding:20px 0px;
+	}
+
+h3{
+	padding:0px;
+	margin:0px;
+	border:0px;
+	}
+	
+.main-text{
+	background-color:rgba(140,140,140,0.8);
+	border-radius:10px;
+	padding:20px 20px;
+	margin:20px 20px;
+	}
+	
+.nav-tabs > li > a {
+	border-top-color: rgba(150,150,150,0.95);
+	background-color:rgba(150,150,150,0.8);
+	border-top-style: solid;
+	border-top-width: 3px;
+	}
+	
+.container{
+	width:70%;
+	background-color:rgba(200,200,200,0.2);
+	border-style:ridge;
+	border-width:4px;
+	border-color:rgba(200,200,200,0.8);
+}
+
+#feedback{
+padding:40px 40px;
+}
+
+blockquote{
+-webkit-margin-start: 0px;
+margin-bottom:0px;
+padding-bottom:0px;
+border-bottom:0px;
+border-left-color: rgb(138, 138, 138);
+}
+
+
+.parent-text{
+font-variant:normal;
+font-size:16px;
+}
+
+.parent-text.a:link {color:black;text-decoration:bold;font-variant: small-caps;}  
+
+.img-responsive{
+max-width:60%;
+float:right;
+}
+/*
+.tutor_profile{
+	border-style:ridge;
+	border-width:4px;
+	border-color:rgba(200,200,240,0.8);
+	}
+*/
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+background-color: transparent;
+	}
+
+.navbar-default .navbar-toggle {
+border-color: transparent;
+}
+	
+ .navbar-toggle {
+	position: relative;
+	float: right;	
+	padding: 10px 10px;
+	text-align:center;
+	margin-right:0px;
+	margin-left:0px
+}
