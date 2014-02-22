@@ -1,6 +1,6 @@
 
 body {
-	font-size: 20px;
+	font-size: 18px;
 	font-family:"calibri";
 	font-style:bold;
 	background-color:white; 
@@ -53,9 +53,9 @@ font-weight:bold;
 background-color:transparent;
 }
 
-.dropdown-menu.a:link {color:gray;text-decoration:none;font-variant: small-caps;} 
+.dropdown-menu.a:link {color:white;text-decoration:none;font-variant: none;} 
 .dropdown-menu.a:visited {color:gray;text-decoration:none;}  /* visited link */
-.dropdown-menu.a:hover {color:gray; text-decoration:none; font-weight:bold;}  /* mouse over link */
+.dropdown-menu.a:hover {color:white; text-decoration:bold; font-weight:bold;}  /* mouse over link */
 .dropdown-menu.a:active {color:gray;text-decoration:none; font-weight:bold;}  /* selected link */
 	
 	a:link {color:gray;text-decoration:none;font-variant: small-caps;}      /* unvisited link */
@@ -69,7 +69,7 @@ background-color:transparent;
 
 .main_heading{
 	clear:both;
-	height:480px;
+	height:360px;
 	font-weight:bold;
 	font-size:60px;
 	position: relative;
@@ -160,4 +160,32 @@ border-color: transparent;
     border-top: medium double;
     color: black;
     text-align: center;
+}
+
+.tutor_table{
+	border-collapse: collapse;
+	border-spacing: 5px;
+	font-size: 
+}
+.tutor_table.th{
+	border-right-style: solid;
+	border-right: 2px;
+	width:120px;
+}
+
+td,th{
+	padding-right: 50px;
+}
+
+.form-inline{
+	padding:40px;
+}
+
+.answer-block{
+	padding-left: 40px;
+}
+
+.form-inline{
+	padding-left:40px;
+	padding-right: 40px;
 }

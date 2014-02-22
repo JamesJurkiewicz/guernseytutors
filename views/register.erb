@@ -32,21 +32,54 @@
 			</div>
 		</nav>
   
-		<p>If you would like to register with Guernsey Tutors for tutoring, please complete the form below. We will be in touch shortly to investigate teaching options and organise your first lesson!</p>
-		<br><br>
-		<p>This form will include subjects to be tutored etc, but I haven't finished it yet</p>
-		<form role='form' method="post" class='form-inline'>
-			<!--<input type="radio" name="student" value="student">Student<br>
-			<input type="radio" name="parent" value="parent">Parent
-			
-		</form>
-		-->
-            
-          <div class="form-group">
-            <input type="text" class='form-control' name="first_name" placeholder="First name" >
-            <input type="text" class='form-control' name="email" placeholder="Email" >
-            <button type="submit" class='btn btn-success'>Send</button>
-          </div>
+		<p>If you would like to register with Guernsey Tutors for tutoring, please complete the form below. We will be in touch shortly to organise your first lesson!</p>
+		<br>
+
+		<form role='form' method='POST' class='form-inline'>
+			<div class='form-group'>
+		      <label for='tutee[name]'>Name</label>
+		      <input name='tutee[name]' class='form-control'>
+		    </div>
+
+		    <div class='form-inline'>
+		      <label for='tutee[email]'>Email</label>
+		      <input name='tutee[email]' class='form-control'>
+		    </div>
+		    <br>
+		    <br>
+			<p>Please indicate whether you are a student seeking tutoring, or a parent seeking tutoring for your child:</p>
+			<div class="answer-block">
+				<input type="radio" name="category" value="student">Student
+				<br>
+				<input type="radio" name="category" value="parent">Parent
+			</div>
+            <br>
+		    <br>
+		    <p>Please give an indication of the subject(s) you wish to cover over your tutoring sessions</p>
+		    <div class="answer-block">
+			    <input type="checkbox" name="subject" value="maths">Maths
+				<br>
+				<input type="checkbox" name="subject" value="physics">Physics
+				<br>
+			    <input type="checkbox" name="subject" value="chemistry">Chemistry
+				<br>
+				<input type="checkbox" name="subject" value="maths">Biology
+			</div>
+			<br>
+			<br>
+
+			<p>What exams are you currently preparing for? </p>
+			<div class="answer-block">
+				<input type="radio" name="exam" value="gcse">GCSE exams or earlier
+				<br>
+				<input type="radio" name="exam" value="as">AS levels
+				<br>
+				<input type="radio" name="exam" value="alev">A levels or university exams
+			</div>
+			<br>
+			<br>
+		    <button type="submit" class="btn btn-success btn-lg">Submit</button>
+
         </form>
 		
 	</div>

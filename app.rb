@@ -30,11 +30,17 @@ get '/index' do
 end
 
 	
-post '/' do
+post '/register' do
 
-	#@name = params[:first_name]
-	#@email = params[:email]
-	
-	erb:thankyou
-	end
+	@tutee = params[:tutee]
+	@subject = params[:subject]
+	@exam = params[:exam]
+
+	@tut_name = @tutee[:name]
+	@first_name = @tutee[:name].split.first
+	@tut_email = @tutee[:email]
+
+		
+	erb :thankyou
+end
 	
