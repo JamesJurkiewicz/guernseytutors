@@ -29,9 +29,9 @@ get '/index' do
 	erb:index
 end
 
-	
 post '/register' do
 
+	@category = params[:category]
 	@tutee = params[:tutee]
 	@subject = params[:subject]
 	@exam = params[:exam]
@@ -40,7 +40,10 @@ post '/register' do
 	@first_name = @tutee[:name].split.first
 	@tut_email = @tutee[:email]
 
-		
-	erb :thankyou
+	if @category == "Parent"
+		erb :thankyou_parent
+	else 	
+		erb :thankyou
+	end
 end
 	
