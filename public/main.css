@@ -72,52 +72,5 @@ margin-bottom:0px;
 padding-bottom:0px;
 border-bottom:0px;
 border-left-color: rgb(138, 138, 138);
-}
+} 
 
-.parent-text.a:link {color:black;text-decoration:bold;font-variant: small-caps;}  
-
-.img-responsive{
-max-width:60%;
-float:right;
-}
-
-
-li.active-link{
-	background-color: transparent;
-}
-
-hr{
-    padding: 10px 10px;
-    border: none;
-    border-top: medium double;
-    color: black;
-    text-align: center;
-}
-
-.tutor_table{
-	border-collapse: collapse;
-	border-spacing: 5px;
-	margin: 10px 10px;
-}
-.tutor_table.th{
-	border-right-style: solid;
-	border-right: 2px;
-	width:100px;
-}
-
-td,th{
-	padding-right: 50px;
-}
-
-.form-inline{
-	padding:40px;
-}
-
-.answer-block{
-	padding-left: 40px;
-}
-
-.form-inline{
-	padding-left:40px;
-	padding-right: 40px;
-}

@@ -1,0 +1,29 @@
+
+.answer-block{
+	padding-left: 40px;
+}
+
+.form-inline{
+	padding-left:40px;
+	padding-right: 40px;
+	background-color:rgba(140,140,140,0.8);
+	border-radius:10px;
+	padding:20px 20px;
+	margin:20px 20px;
+	/*font-variant:normal;*/
+	font-size:20px;
+	}
+
+.form-group{
+	padding-right: 40px;
+	padding-bottom: 30px
+}
+
+hr{
+    padding: 10px 10px;
+    border: none;
+    border-top: medium double;
+    color: white;
+    text-align: center;
+    width:80%;
+}

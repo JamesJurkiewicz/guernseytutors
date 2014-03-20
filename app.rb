@@ -1,13 +1,17 @@
 require 'sinatra'
 require 'pony'
-
+require './subject'
+require 'mongoid'
+require 'json'
 #if settings.environment == :production
   # if we're on heroku, use the sendgrid settings
-#  require './production_pony_options'
+require './production_pony_options'
 #else
   # otherwise, use our normal email account
 #  require './development_pony_options'
 #end
+
+Mongoid.load!("mongoid.yml")
 
 get '/'  do
   erb :index
@@ -29,11 +33,12 @@ get '/index' do
 	erb:index
 end
 
+
 post '/register' do
 
 	@category = params[:category]
 	@tutee = params[:tutee]
-	@subject = params[:subject]
+	@subject = Subject.new(params[:subject])
 	@exam = params[:exam]
 
 	@tut_name = @tutee[:name]
@@ -46,4 +51,3 @@ post '/register' do
 		erb :thankyou
 	end
 end
-	
