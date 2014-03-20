@@ -7,12 +7,15 @@ GEM
     activesupport (3.2.17)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    bson (1.9.2)
     builder (3.0.4)
     i18n (0.6.9)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.25.1)
+    mongo (1.9.2)
+      bson (~> 1.9.2)
     mongoid (3.1.6)
       activemodel (~> 3.2)
       moped (~> 1.4)
@@ -41,6 +44,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  mongo
   mongoid
   pony
   sinatra

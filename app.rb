@@ -1,15 +1,16 @@
 require 'sinatra'
 require 'pony'
-require './subject'
+require './student'
 require 'mongoid'
 require 'json'
-#if settings.environment == :production
+
+if settings.environment == :production
   # if we're on heroku, use the sendgrid settings
-require './production_pony_options'
-#else
+  require './production_pony_options'
+else
   # otherwise, use our normal email account
-#  require './development_pony_options'
-#end
+  require './development_pony_options'
+end
 
 Mongoid.load!("mongoid.yml")
 
@@ -36,18 +37,26 @@ end
 
 post '/register' do
 
-	@category = params[:category]
-	@tutee = params[:tutee]
-	@subject = Subject.new(params[:subject])
-	@exam = params[:exam]
+	a=Tutee.new
 
-	@tut_name = @tutee[:name]
-	@first_name = @tutee[:name].split.first
-	@tut_email = @tutee[:email]
+	a.name= @tutee[:name]
+	a.email=
+	a.category=params[:category]
+	a.subject=params[:subject]
+	a.level=params[:level]
 
-	if @category == "Parent"
+	a.save
+
+
+	if a.category == "Parent"
 		erb :thankyou_parent
 	else 	
 		erb :thankyou
 	end
+
+end
+
+
+get '/signups' do 
+	puts @tutee[:name]
 end
