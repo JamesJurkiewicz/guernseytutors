@@ -37,18 +37,23 @@ end
 
 post '/register' do
 
-	a=Tutee.new
+	@tutee=Student.new
 
-	a.name= @tutee[:name]
-	a.email=
-	a.category=params[:category]
-	a.subject=params[:subject]
-	a.level=params[:level]
+	@tutee.name= params[:name]
+	@tutee.email=params[:email]
+	@tutee.category=params[:category]
+	@tutee.subject=params[:subject]
+	@tutee.level=params[:level]
 
-	a.save
+	@tutee.save
 
+	@first_name=@tutee.first_name
+	@subject=@tutee.subject
+	@level=@tutee.level
 
-	if a.category == "Parent"
+puts "Student: #{@tutee.email}"
+
+	if @tutee.category == "Parent"
 		erb :thankyou_parent
 	else 	
 		erb :thankyou
